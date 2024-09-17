@@ -16,5 +16,5 @@ Calcula a sequência de Fibonacci e verifica se um número informado pertence à
 
 Realiza o cálculo do menor, maior e da média de faturamento diário. Além disso, o programa conta o número de dias em que o faturamento foi superior à média mensal.]
 
-##Tecnologias Utilizadas
+###Tecnologias Utilizadas
 Java: Linguagem de programação utilizada para resolver os desafios.
