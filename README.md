@@ -1,6 +1,6 @@
 # Desafio de Estágio - Target RP
 
-Este repositório contém soluções para o desafio de estágio da Target RP, abordando diferentes problemas de programação.
+Este repositório contém soluções para o desafio de estágio da Target RP, abordando diferentes problemas de programação em Java.
 
 ## Arquivos
 
@@ -14,7 +14,8 @@ Calcula a sequência de Fibonacci e verifica se um número informado pertence à
 
 ### SomaCalculadora.java
 
-Realiza o cálculo do menor, maior e da média de faturamento diário. Além disso, o programa conta o número de dias em que o faturamento foi superior à média mensal.]
+Realiza o cálculo do menor, maior e da média de faturamento diário. Além disso, o programa conta o número de dias em que o faturamento foi superior à média mensal.
 
-###Tecnologias Utilizadas
-Java: Linguagem de programação utilizada para resolver os desafios.
+## Tecnologias Utilizadas
+
+- **Linguagem de Programação:** Java
