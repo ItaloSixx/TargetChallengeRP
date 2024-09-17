@@ -1,56 +1,57 @@
 public class Distribuidora {
 
-    public static void main(String[] args) {
-        double[] faturamentoDiario = {1000, 1500, 1200, 1600, 1800, 2000, 2100, 2300, 2500, 2400, 2200, 1900};
+    private double[] faturamentoDiario;
 
-        double menorFaturamento = menorFaturamento(faturamentoDiario);
-        double maiorFaturamento = maiorFaturamento(faturamentoDiario);
-        double mediaFaturamento = calcularMedia(faturamentoDiario);
-        int diasAcimaMedia = diaAcimaMedia(faturamentoDiario, mediaFaturamento);
-
-        System.out.println("Menor valor de faturmaneot " + menorFaturamento);
-        System.out.println("Maior valor de faturamento " + maiorFaturamento);
-        System.out.println("Media de faturamento " + mediaFaturamento);
-        System.out.println("Dias acima da media " + diasAcimaMedia);
+    public Distribuidora(double[] faturamentoDiario) {
+        this.faturamentoDiario = faturamentoDiario;
     }
 
-    public static double menorFaturamento(double[] faturamento){
+    public double MenorFaturamento() {
         double menor = Double.MAX_VALUE;
-        for(double valor : faturamento){
-            if(valor<menor){
+        for (double valor : faturamentoDiario) {
+            if (valor < menor) {
                 menor = valor;
             }
         }
         return menor;
     }
 
-    public static double maiorFaturamento(double[] faturamento){
+    public double MaiorFaturamento() {
         double maior = Double.MIN_VALUE;
-        for(double valor : faturamento){
-            if(valor >maior){
+        for (double valor : faturamentoDiario) {
+            if (valor > maior) {
                 maior = valor;
             }
         }
         return maior;
     }
 
-    public static double calcularMedia(double[] faturamento){
+    public double MediaFaturamento() {
         double soma = 0;
-        for(double valor : faturamento){
+        for (double valor : faturamentoDiario) {
             soma += valor;
         }
-        return soma/faturamento.length;
+        return soma / faturamentoDiario.length;
     }
 
-    public static int diaAcimaMedia (double[] faturamento, double media){
+    public int DiasAcimaMedia() {
+        double media = MediaFaturamento();
         int contador = 0;
-        for(double valor : faturamento){
-            if(valor > media){
+        for (double valor : faturamentoDiario) {
+            if (valor > media) {
                 contador++;
             }
         }
         return contador;
     }
 
-}
+    public static void main(String[] args) {
+        double[] faturamento = {1000, 1500, 1200, 1600, 1800, 2000, 2100, 2300, 2500, 2400, 2200, 1900};
+        Distribuidora distribuidora = new Distribuidora(faturamento);
 
+        System.out.println("Menor valor de faturamento: " + distribuidora.MenorFaturamento());
+        System.out.println("Maior valor de faturamento: " + distribuidora.MaiorFaturamento());
+        System.out.println("Média de faturamento: " + distribuidora.MediaFaturamento());
+        System.out.println("Dias acima da média: " + distribuidora.DiasAcimaMedia());
+    }
+}
