@@ -1,6 +1,6 @@
 # Desafio de Estágio - Target RP
 
-Este repositório contém soluções para o desafio de estágio da Target RP, abordando diferentes problemas de programação em Java.
+Este repositório contém soluções para o desafio de estágio da Target RP.
 
 ## Arquivos
 
