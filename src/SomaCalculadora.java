@@ -20,7 +20,7 @@ public class SomaCalculadora {
     }
 
     public static void main(String[] args) {
-        SomaCalculadora calculadora = new SomaCalculadora(13);
+        SomaCalculadora calculadora = new SomaCalculadora(12);
         calculadora.calcularSoma();
         System.out.println("Soma: " + calculadora.getSoma());
     }
